@@ -1,0 +1,240 @@
+# ============================================================
+# SECRETS & CREDENTIALS
+# ============================================================
+
+# Environment / secret configuration
+.env
+.env.*
+!.env.example
+
+# Keys, certificates, credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+
+# Credential/config files
+credentials.json
+secrets.json
+secret.json
+config.local.*
+config.secret.*
+secrets.*
+
+# Cloud / service account credentials
+service-account*.json
+*-service-account.json
+firebase-adminsdk*.json
+
+# AWS credentials
+.aws/
+aws-credentials
+credentials
+
+# SSH keys
+.ssh/
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+
+# ============================================================
+# KICAD
+# ============================================================
+
+# Local/session files
+*.kicad_prl
+*.kicad_lck
+*.lck
+
+# Backup files
+*.kicad_pro-bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+
+# KiCad cache
+fp-info-cache
+
+# Keep project source files:
+# *.kicad_pro   <- DO NOT ignore
+# *.kicad_sch   <- DO NOT ignore
+# *.kicad_pcb   <- DO NOT ignore
+
+# Theia workspace/editor
+.theia/
+
+
+# ============================================================
+# PLATFORMIO / ESP32
+# ============================================================
+
+# PlatformIO build output
+.pio/
+
+# PlatformIO IDE metadata
+.vscode/
+!.vscode/extensions.json
+
+# Compiled binaries / firmware
+*.bin
+*.elf
+*.hex
+*.map
+*.uf2
+
+# Dependency lock/cache
+.pioenvs/
+.piolibdeps/
+
+
+# ============================================================
+# GENERAL IDE / EDITOR FILES
+# ============================================================
+
+.idea/
+*.iml
+
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# Editor swap / temporary files
+*.swp
+*.swo
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db
+
+
+# ============================================================
+# PYTHON
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.ipynb_checkpoints/
+
+
+# ============================================================
+# NODE / REACT / WEB
+# ============================================================
+
+node_modules/
+.npm/
+.yarn/
+.pnpm-store/
+
+dist/
+build/
+.next/
+out/
+
+# Local environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+
+# ============================================================
+# FIREBASE
+# ============================================================
+
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Firebase local emulator data
+.emulator/
+
+
+# ============================================================
+# LOGS
+# ============================================================
+
+*.log
+logs/
+
+
+# ============================================================
+# DATABASE / LOCAL DATA
+# ============================================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# Local datasets that may contain real device/user data
+# data/
+dataset/
+datasets/
+private_data/
+local_data/
+
+
+# ============================================================
+# GENERATED / TEMPORARY FILES
+# ============================================================
+
+temp/
+tmp/
+.cache/
+.cache-loader/
+
+*.bak
+*.backup
+*.old
+
+
+# ============================================================
+# LATEX
+# ============================================================
+
+# Build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+
+# LaTeX temporary files
+*.nav
+*.snm
+*.vrb
+
+# Generated PDFs:
+# Uncomment this ONLY if PDFs should not be version-controlled
+# *.pdf
+
+#======================================
+#UNNECESSARY
+#======================================
+images/
+fft_test.py
+
