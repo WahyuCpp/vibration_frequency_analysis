@@ -3,15 +3,16 @@ import pandas as pd
 import scipy.fftpack
 import numpy as np
 
-data_path = ('data/F_B_1_0.csv')
-
-df=pd.read_csv(data_path) 
+data_path = ('data/F_B_4_0.csv')
+time_path = ('data/time.csv')
+df1=pd.read_csv(data_path) 
+df2=pd.read_csv(time_path)
 
 # Data per column input
-# t=df['Time(s)']
-y1=df['Accelerometer 1 (m/s^2)']
-y2=df['Accelerometer 2 (m/s^2)']
-y3=df['Accelerometer 3 (m/s^2)']
+t0=df2['Time (seconds)']
+y1=df1['Accelerometer 1 (m/s^2)']
+y2=df1['Accelerometer 2 (m/s^2)']
+y3=df1['Accelerometer 3 (m/s^2)']
 
 # FFT program
 # Number of samplepoints
@@ -33,7 +34,7 @@ plt.figure(figsize = (12, 6))
 
 # Signal Acc1
 plt.subplot(3,1,1)
-plt.plot(x, y1, '-r', label='Acc1')
+plt.plot(t0[:420000], y1[:420000], '-r', label='Acc1') 
 plt.title('Signal')
 # plt.xlim(0, 10)
 plt.xlabel('Time')
@@ -41,14 +42,14 @@ plt.ylabel('Acc1')
 
 # Signal Acc2
 plt.subplot(3,1,2)
-plt.plot(x, y2, '-g', label='Acc2')
+plt.plot(t0[:420000], y2[:420000], '-g', label='Acc2')
 # plt.xlim(0, 10)
 plt.xlabel('Time')
 plt.ylabel('Acc2')
 
 # Signal Acc3
 plt.subplot(3,1,3)
-plt.plot(x, y3, '-b', label='Acc3')
+plt.plot(t0[:420000], y3[:420000], '-b', label='Acc3')
 # plt.xlim(0, 10)
 plt.xlabel('Time')
 plt.ylabel('Acc3')
