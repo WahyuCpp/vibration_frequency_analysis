@@ -1,3 +1,5 @@
+Run transform.py
+
 The dataset consists of constant and variable speed data collected from 8 different D396 Marathon Electric 3-phase motors. Each motor has different types of faults artificially created by SpectraQuest. Data is collected using three accelerometers and a microphone (the first, third and fourth columns are accelerometer data, the second column is acoustic data, and the fifth column is temperature data).
 The labelling of data is as follows {Letter}-{Letter}-{Number}-{Number}:
 
